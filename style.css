@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    width: 80%;
+} */
+
+
+
+ /* Estilizando a barra de navegação*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 5rem;
+    border-bottom: 2px solid #1E90FF;
+}
+header a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.3rem;
+
+}
+header a:hover{
+    color: #7e1e1e;
+    transition: ease-in-out 0.3s;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FF2C2C;
+    /* text-shadow: 2px 2px 0 whitesmoke; */
+}
+ul{
+    display: flex;
+}
+li{
+    padding-left: 1.3rem;
+    list-style-type: none;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Estilizando a section home */
+section#home{
+    width: 100%;
+    height: 25rem;
+    margin: 2.5rem 0;
+}
+#home h1{
+    font-family: "Roboto", sans-serif;
+}
+.foto{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10rem;
+    background-image: url(assets/Foto-Perfil02.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.foto:hover{
+    transform: rotate(5deg) scale(1.03);
+    transition: ease 0.2s;
+}
+.content{
+    width: 50rem;
+    text-align: justify;
+}
+.b-content{
+    width: 15rem;
+    height: 3rem;
+    background-color: #1E90FF;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.b-content:hover{
+    border: 5px solid #FF2C2C;
+    color: #FF2C2C;
+    background-color: whitesmoke;
+    transition: ease-in-out 0.23s;
+    transform: scale(1.2);
+}
+.buton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 01rem;
+}
+
+
+/* Estilizando a section contact */
+section#contact{
+    
+    height: 12rem;
+}
+#contact h1{
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif;
+}
+.classeDoP{
+    width: 30%;
+    /* height: 2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact p{
+    font-family: "Funnel Display", Verdana;
+}
+.icons-content{
+    display: flex;
+    justify-content: space-between;
+}
+.icons-content i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: black;
+    border-radius: 2rem;
+    color: #1E90FF;
+}
+.icons-content a{
+   text-decoration: none;
+}
+.icons-content i:hover{
+    transform: scale(1.2);
+    transition: ease-in-out 0.3s;
+    color: #FF2C2C;
+}
+.btn-content button{
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 0.3rem;
+    color: whitesmoke;
+    background-color: #1E90FF;
+}
+.btn-content button:hover{
+    transform: scale(1.1);
+    color: #FF2C2C;
+    background-color: whitesmoke;
+    border: 5px solid #FF2C2C;
+    transition: ease-in-out 0.3s;
+}
+
+
+/* Estilizando a section projects */
+#projects h1{
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+.cards-projects{
+    width: 80rem;
+    /* height: 25rem; */
+    /* margin: 2.5rem ; */
+    /* background-color: #1E90FF; */
+}
+/* estilizando o carousel */
+.projects-content{
+    width: 20rem;
+    /* height: 15rem; */
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.192);
+    border: 1px outset0FF;
+    border-radius: 1rem;
+    /* cursor: pointer; */
+}
+.slides{
+    width: 400%;
+    /* height: 14rem; */
+    display: flex;
+    padding-bottom: 2rem ;
+    margin-bottom: 2rem;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+    /* object-fit:cover; */
+}
+.slide img{
+    width: 20rem;
+    height: 12rem;
+    cursor: pointer;
+}
+.manual-navigation{
+    position: absolute;
+    width: 20rem;
+    margin-top: 13rem;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 3px solid  black;
+    padding: 0.3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.manual-btn:not(:first-child){
+    margin-left: 2rem;
+}
+.manual-btn:hover{
+    background-color: #C0C0C0;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: 0;
+}
+#radio5:checked ~ .first{
+    margin-left: -25%;
+}
+#radio6:checked ~ .first{
+    margin-left: -50%;
+}
+.navigation-auto div{
+    border: 3px solid blue;
+    padding: 0.3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 20rem;
+    margin-top: 13rem;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:first-child){
+    margin-left: 2rem;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: black;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: black;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: black;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: black;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background-color: black;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background-color: black;
+}
+/* fim do carousel */ 
+
+.icons-projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.icons-projects i{
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #1E90FF;
+}
+.icons-projects i:hover{
+    transform: scale(1.1);
+    color: #FF2C2C;
+    transition: ease-in-out 0.4s;
+}
+.icons-projects a{
+    text-decoration: none;
+}
