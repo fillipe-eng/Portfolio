@@ -164,6 +164,10 @@ section#contact{
 }
 .cards-projects{
     width: 80rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     /* height: 25rem; */
     /* margin: 2.5rem ; */
     /* background-color: #1E90FF; */
@@ -176,6 +180,7 @@ section#contact{
     background-color: rgba(128, 128, 128, 0.192);
     border: 1px outset0FF;
     border-radius: 1rem;
+    margin: 2rem;
     /* cursor: pointer; */
 }
 .slides{
