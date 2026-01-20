@@ -193,12 +193,12 @@ section#contact{
 .slides input{
     display: none;
 }
-.slide{
+.slide1, .slide2{
     width: 25%;
     position: relative;
     /* object-fit:cover; */
 }
-.slide img{
+.slide1 img, .slide2 img{
     width: 20rem;
     height: 12rem;
     cursor: pointer;
